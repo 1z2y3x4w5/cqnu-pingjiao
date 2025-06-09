@@ -92,4 +92,13 @@ python 自动保存提交.py
 ```ruby
 python 自动提交评价.py
 ```
-# **注：最好不要直接运行自动提交评价.py文件，若出了问题，本人一概不负**
+# **注：登入时最好用企业微信扫码登入！**
+若12秒都来不及扫码登入，就提高等待时间，将time.sleep(12)更改为time.sleep(20)，当然，也可以减少等待时间
+```ruby
+# 打开“重庆师范大学校园门户”
+web.get('https://csxmh.cqnu.edu.cn/PersonalApplications/viewPage?active_nav_num=1')
+# 等待页面加载完成
+time.sleep(12)  # 根据实际情况调整等待时间，最好使用企业微信扫码登录
+
+```
+# **注：最好不要直接运行自动提交评价.py文件，若出了问题，本人一概不负！！！**
