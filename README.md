@@ -27,14 +27,14 @@ pip install -r requirements.txt
 
 下面以运行自动保存评价.py文件为示例（运行自动提交评价.py文件与其无异）：
 
-1.更改chrome或chromium的绝对地址
+1.更改chrome或chromium的绝对地址（3个py文件都要更改）
 
 其中“D:\chromium\chrome.exe”是绝对地址
 ```ruby
 chrome_options.binary_location = r"D:\chromium\chrome.exe"
 ```
 
-2.更改chromedriver的绝对地址
+2.更改chromedriver的绝对地址（3个py文件都要更改）
 
 其中“D:/chromedriver/chromedriver.exe”是绝对地址
 ```ruby
