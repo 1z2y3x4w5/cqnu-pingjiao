@@ -1,5 +1,8 @@
-# cqnu-pingjiao
-重庆师范大学正方教务系统一键学生评教
+<div align="center">
+    <h1 align="center">cqnu-pingjiao</h1>
+    <p align="center">重庆师范大学正方教务系统一键学生评教</p>
+</div>
+
 
 # 概述
 又到了期末，恶心的评教又来了，每次看着二三十个课程需要评教，就很无语，老老实实评教，又要花费不少时间，因此，写了它
