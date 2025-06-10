@@ -17,12 +17,12 @@
 3.chromedriver，官网为  https://googlechromelabs.github.io/chrome-for-testing/
 
 # 克隆项目到本地
-```ruby
+```bash
 git clone https://github.com/1z2y3x4w5/cqnu-pingjiao
 ```
 
 # 使用pip安装项目依赖
-```ruby
+```bash
 pip install -r requirements.txt
 ```
 # 使用过程
@@ -30,46 +30,46 @@ pip install -r requirements.txt
 
 下面以运行自动保存评价.py文件为示例（运行自动提交评价.py文件与其无异）：
 
-1.更改chrome或chromium的绝对地址（3个py文件都要更改）
+## 1.更改chrome或chromium的绝对地址（3个py文件都要更改）
 
 其中“D:\chromium\chrome.exe”是绝对地址
-```ruby
+```bash
 chrome_options.binary_location = r"D:\chromium\chrome.exe"
 ```
 
-2.更改chromedriver的绝对地址（3个py文件都要更改）
+## 2.更改chromedriver的绝对地址（3个py文件都要更改）
 
 其中“D:/chromedriver/chromedriver.exe”是绝对地址
-```ruby
+```bash
 service = Service('D:/chromedriver/chromedriver.exe')
 ```
 
-3.检查文字框的ID是否正确
+## 3.检查文字框的ID是否正确
 
 把鼠标指针停在文字框上，右击点击“检查”，打开开发者工具界面
 
 其HTML格式为
-```ruby
+```bash
 <input type="text" id="evalComment" class="form-control" name="comment">
 ```
 
 检查evalComment是否和“3600F32EB5E33709E065000000000001_py”相同
 
 若不同，则替换文件中的"3600F32EB5E33709E065000000000001_py"
-```ruby
+```bash
 textarea = web.find_element(By.ID, '3600F32EB5E33709E065000000000001_py')
 ```
 
-4.更改评语
+## 4.更改评语
 
 **注：**
 括号里的引号不能丢
-```ruby
+```bash
 textarea.send_keys("老师教得很好！")
 ```
 
-5.选择哪个评价项目选择“符合”
-```ruby
+## 5.选择哪个评价项目选择“符合”
+```bash
 wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ajaxForm1"]/div[2]/div[1]/div[2]/table[1]/tbody/tr[19]/td[2]/div/div[2]/label/input'))).click()
 ```
 py文件中选的是第19个
@@ -82,22 +82,22 @@ wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ajaxForm1"]/div[2]/di
 
 # 启动项目
 当一切准备就绪。使用python运行自动保存评价.py
-```ruby
+```bash
 python 自动保存评价.py
 ```
 当所有的评价都保存了，其显示“已评完”，且评价没有问题后，使用python运行自动保存提交.py
-```ruby
+```bash
 python 自动保存提交.py
 ```
 **或**
 
 当一切准备就绪。使用python运行自动提交评价.py
-```ruby
+```bash
 python 自动提交评价.py
 ```
 # **注：登入时最好用企业微信扫码登入！**
 若12秒都来不及扫码登入，就提高等待时间，将time.sleep(12)更改为time.sleep(20)，当然，也可以减少等待时间
-```ruby
+```bash
 # 打开“重庆师范大学校园门户”
 web.get('https://csxmh.cqnu.edu.cn/PersonalApplications/viewPage?active_nav_num=1')
 # 等待页面加载完成
