@@ -78,7 +78,7 @@ py文件中选的是第19个
 
 wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="ajaxForm1"]/div[2]/div[1]/div[2]/table[1]/tbody/tr[19]/td[2]/div/div[2]/label/input'))).click()
 
-中的“tr[19]”替换为“tr{X}”
+中的“tr[19]”替换为“tr[X]”
 
 # 启动项目
 当一切准备就绪。使用python运行自动保存评价.py
