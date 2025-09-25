@@ -1,6 +1,6 @@
 <div align="center">
-    <h1 align="center">cqnu-pingjiao</h1>
-    <p align="center">重庆师范大学正方教务系统一键学生评教</p>
+    <h1 align="center">pingjiao</h1>
+    <p align="center">正方教务系统一键学生评教</p>
 </div>
 
 
@@ -101,7 +101,7 @@ python 自动提交评价.py
 # 打开“重庆师范大学校园门户”
 web.get('https://csxmh.cqnu.edu.cn/PersonalApplications/viewPage?active_nav_num=1')
 # 等待页面加载完成
-time.sleep(12)  # 根据实际情况调整等待时间，最好使用企业微信扫码登录
+time.sleep(12)  # 根据实际情况调整等待时间，最好使用企业微信或钉钉扫码登录
 
 ```
 # **注：最好不要直接运行自动提交评价.py文件，若出了问题，本人一概不负！！！**
