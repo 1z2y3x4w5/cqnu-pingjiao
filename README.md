@@ -1,5 +1,5 @@
 <div align="center">
-    <h1 align="center">pingjiao</h1>
+    <h1 align="center">ZF_pingjiao</h1>
     <p align="center">正方教务系统一键学生评教</p>
 </div>
 
@@ -104,4 +104,4 @@ web.get('https://csxmh.cqnu.edu.cn/PersonalApplications/viewPage?active_nav_num=
 time.sleep(12)  # 根据实际情况调整等待时间，最好使用企业微信或钉钉扫码登录
 
 ```
-# **注：最好不要直接运行自动提交评价.py文件，若出了问题，本人一概不负！！！**
+# **注：最好不要直接运行自动提交评价.py文件！！！**
